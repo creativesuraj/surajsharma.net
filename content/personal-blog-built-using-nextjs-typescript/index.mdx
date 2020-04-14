@@ -1,0 +1,104 @@
+---
+title: 'Personal Blog Built using Nextjs and TypeScript'
+excerpt: 'Things to consider when building a personal blog website with React'
+coverImage: 
+  url: '/images/coverImage.jpg'
+  credit: 
+    url: 'https://unsplash.com/photos/1_CMoFsPfso'
+    name: 'Joanna Kosinska'
+    source: 'Unsplash'
+    sourceUrl: 'https://unsplash.com' 
+
+date: '2020-04-12T00:00:00.000Z'
+author:
+  name: Suraj Sharma
+  picture: ''
+---
+
+I had a personal website before that was a single page static website built using HTML5, 
+[materialize](https://materializecss.com), and jquery. It is still there on Heroku [click here →](http://suraj-sharma.herokuapp.com/)
+
+I have been working on React for more than a year now. One day I thought of redesigning 
+my blog using React and Typescript but React has a major problem in terms of SEO, because of 
+client-side rendering, search engines' bot are unable to scrape content from websites resulting 
+in zero organic views.
+
+
+## These were the requirements I had for my new personal website : 
+
+ - support for blog posts
+ - Typescript support😘
+ - SEO friendly (must have)
+ - Progressive Web App (everyone is doing it why not me)
+
+
+## Research
+
+I have read about React frameworks Nextjs and Gatsby before, they are static site generators on 
+the build time, which means the website has static HTML and CSS files with fully loaded content 
+from the server itself, unlike React where contents are generated on the client-side that is not 
+the best option for blog websites.
+
+
+## I chose Nextjs over Gatsby because of the two reasons:
+
+1. Option for server-side rendering on every request,
+2. Serverless support.
+
+
+## Is TypeScript supported?
+
+Yes, Nextjs has the support for TypeScript
+
+
+## Development
+
+ I kicked started my project with Material UI's [nextjs-with-typescript example](https://github.com/mui-org/material-ui/tree/master/examples/nextjs-with-typescript). 
+
+
+## Whether to use Headless CMS or Markdown files for writing blogs?
+
+```javascript
+   The choice was easy: Markdown🏆
+```
+
+Opensource projects like Babel, Nextjs and many other projects use Markdown files to create 
+their blog posts so the choice was clear, then came how to render markdown files to JSX? 
+
+For the time being, I'm using the [markdown-to-JSX](https://www.npmjs.com/package/markdown-to-jsx) 
+library (but will surely to migrate to MDX because of its capabilities to import react components on markdown 
+files and later embed them on jsx files to demonstrate live examples.
+
+
+## To Summarize, following framework and libraries are being used to complete the development of the website:
+
+- [Nextjs](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Material UI](https://material-ui.com/)
+- [Markdown to JSX](https://www.npmjs.com/package/markdown-to-jsx)
+- [HighLightjs](https://highlightjs.org/)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) to store email and name of subscribers who joined my newsletter. 
+- [Zeit Now](https://zeit.co/)- by default websites get the HTTPS support
+
+
+## LightHouse Report
+
+
+## Plans for future enhancements: 
+
+ - Improve the UX
+ - Migrate to MDX
+ - Improve the lighthouse report for accessibility, and performance
+ - Progressive Web App
+ - Send weekly newsletter
+
+
+PS: I have a [GitHub repository](https://github.com/creativesuraj/surajsharma.net) where I push all the posts of this blog. 
+If you find any mistakes on my posts, please feel free to raise an issue or a pull request.
+
+
+
+
+
+
+
